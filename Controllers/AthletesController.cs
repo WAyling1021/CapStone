@@ -4,6 +4,7 @@ using System.Data;
 using System.Data.Entity;
 using System.Linq;
 using System.Net;
+using System.Net.Http;
 using System.Web;
 using System.Web.Mvc;
 using NextLevel.Models;
@@ -13,6 +14,8 @@ namespace NextLevel.Controllers
     public class AthletesController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
+        private static HttpClient client;
+        //private Coordinates coordinates; 
 
         // GET: Athletes
         public ActionResult Index()

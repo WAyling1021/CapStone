@@ -13,7 +13,7 @@ namespace NextLevel.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201908221501214_initial"; }
+            get { return "201908271455472_initial"; }
         }
         
         string IMigrationMetadata.Source

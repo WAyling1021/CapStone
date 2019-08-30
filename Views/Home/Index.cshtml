@@ -14,6 +14,8 @@
         * element that contains the map. */
          #map {
              height: 100%;
+             margin: Auto;
+             width:100%;
          }
          /* Optional: Makes the sample page fill the window. */
          html, body {
@@ -22,6 +24,7 @@
              padding: 0;
          }
     </style>
+
 </head>
 <body>
     <div id="map"></div>
@@ -29,8 +32,8 @@
       var map;
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -34.397, lng: 150.644},
-          zoom: 8
+          center: {lat: -43.0783 , lng: -87.8820 },
+          zoom: 5
         });
       }
     </script>

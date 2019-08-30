@@ -5,6 +5,7 @@ using System.Data.Entity;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Threading.Tasks;
 using System.Web;
 using System.Web.Mvc;
 using NextLevel.Models;
@@ -15,6 +16,9 @@ namespace NextLevel.Controllers
     {
         private ApplicationDbContext db = new ApplicationDbContext();
         private static HttpClient client;
+
+        public bool IsAdmin { get; private set; }
+
         //private Coordinates coordinates; 
 
         // GET: Athletes
@@ -60,6 +64,44 @@ namespace NextLevel.Controllers
 
             return View(athlete);
         }
+        //public string UploadVideo(HttpFileCollection video)
+        //{
+        //    if (video.Count <= 0) return null;
+        //    var fileName = Path.GetFileName(video.Get(0).FileName);
+        //    var path = Path.Combine(Server.MapPath("~/Content/Videos"), fileName);
+        //    // save video here
+        //    return fileName;
+        //}
+        //[HttpPost]
+        //[ValidateInput(false)]
+        //public ActionResult Update(int? id, string title, string body, DateTime dateTime, string tags)
+        //{
+        //    if (!IsAdmin)
+        //    {
+        //        return RedirectToAction("Index");
+        //    }
+
+        //    var post = GetPost(id); // get the post object
+
+        //    var video = System.Web.HttpContext.Current.Request.Files;
+
+        //    post.Title = title;
+        //    post.Body = body;
+        //    post.DateTime = dateTime;
+        //    post.Tags.Clear();
+        //    post.VideoFileName = UploadVideo(video);
+        //    // continued, more code
+        //}
+
+        //private object GetPost(int? id)
+        //{
+        //    throw new NotImplementedException();
+        //}
+
+        //public class Video
+        //{
+        //    public HttpFileCollection File { get; set; }
+        //}
 
         // GET: Athletes/Edit/5
         public ActionResult Edit(int? id)
@@ -91,6 +133,8 @@ namespace NextLevel.Controllers
             }
             return View(athlete);
         }
+        
+
 
         // GET: Athletes/Delete/5
         public ActionResult Delete(int? id)

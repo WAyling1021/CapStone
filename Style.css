@@ -1,0 +1,43 @@
+﻿body {
+    margin:0;
+    padding:0; 
+}
+section{
+    width:100vw;
+    height:100vh;
+    background-image:url('');
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.sec2{
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    width:100vw;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+.sec2 .container{
+    width:45vw;
+    height:65vh;
+
+}
+.sec2 .soical{
+    padding-left:6.5vw;
+    padding-top:6vh;
+}
+.sec .container img{
+    width:3.5vw;
+    height:7vh;
+    padding-left:0vw;
+}
+.content h2{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-left:7vw;
+}

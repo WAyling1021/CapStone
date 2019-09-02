@@ -7,15 +7,14 @@ namespace NextLevel.Models
 {
     public class Coordinates
     {
-        private double latitude;
-        private double longitude;
+        public double Latitude { get; private set; }
+        public double Longitude { get; private set; }
 
-        public double Latitude { get; set; }
-        public double Longitude { get; set; }
-        public Coordinates(double Longitude, double Latitude)
+        public Coordinates(double latitude, double longitude)
         {
             Latitude = latitude;
             Longitude = longitude;
         }
+
     }
 }

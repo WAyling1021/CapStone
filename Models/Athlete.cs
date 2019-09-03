@@ -9,18 +9,18 @@ namespace NextLevel.Models
     public class Athlete
     {
         [Key]
-        public int age { get; set; }
-        public int gradeLevel { get; set; }
-        public string firstName { get; set; }
-        public string lastName { get; set; }
-        public string emailAddress { get; set; }
-        public string schoolName { get; set; }
-        public string city { get; set; }
-        public string state { get; set; }
-        public int zipCode { get; set; }
-        public string postion { get; set; }
-        public int height { get; set; }
-        public int weight { get; set; }
+        public int Age { get; set; }
+        public int GradeLevel { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string EmailAddress { get; set; }
+        public string SchoolName { get; set; }
+        public string City { get; set; }
+        public string State { get; set; }
+        public int ZipCode { get; set; }
+        public string Postion { get; set; }
+        public int Height { get; set; }
+        public int Weight { get; set; }
 
     }
 }
